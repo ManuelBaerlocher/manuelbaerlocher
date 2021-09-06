@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { ImprintComponent } from './imprint/imprint.component';
 
 @Component({
   selector: 'app-root',
@@ -8,6 +9,6 @@ import { Router } from '@angular/router';
 })
 export class AppComponent{
 
-  constructor(public router: Router) { }
+  
 
 }

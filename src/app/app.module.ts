@@ -3,18 +3,29 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { SlideshowComponent } from './slideshow/slideshow.component';
-import { MenuComponent } from './menu/menu.component';
+
 import { ImprintComponent } from './imprint/imprint.component';
 import { DataProtectionComponent } from './data-protection/data-protection.component';
+import { NavbarComponent } from './navbar/navbar.component';
+import { HeadComponent } from './head/head.component';
+import { MyskillsComponent } from './myskills/myskills.component';
+import { MyworkComponent } from './mywork/mywork.component';
+import { AboutmeComponent } from './aboutme/aboutme.component';
+import { ContactmeComponent } from './contactme/contactme.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    SlideshowComponent,
-    MenuComponent,
     ImprintComponent,
-    DataProtectionComponent
+    DataProtectionComponent,
+    NavbarComponent,
+    HeadComponent,
+    MyskillsComponent,
+    MyworkComponent,
+    AboutmeComponent,
+    ContactmeComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

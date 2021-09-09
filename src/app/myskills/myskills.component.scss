@@ -1,0 +1,65 @@
+.mySkill {
+    background-color: #131111;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 16px;
+
+    h2 {
+        margin-top: 0;
+        color: white;
+        font-weight: 500;
+        font-size: 36px;
+        line-height: 90px;
+    }
+}
+
+.skillsContainer {
+    margin-bottom: 82px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 660px;
+    margin-top: -35px;
+}
+
+.skillClass {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 18px;
+    margin-right: 18px;
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+
+.skillImg {
+    width: 60.31px;
+    height: 60.31px;
+    border-radius: 100%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 4px 4px rgba(197, 197, 197, 0.25);
+    z-index: 1;
+
+    img {
+        height: 29px;
+        padding: 20.5px;
+    }
+}
+
+.skillTextBox {
+    background-color: white;
+    width: 182px;
+    height: 120px;
+    border-radius: 6px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    margin-top: -24px;
+}

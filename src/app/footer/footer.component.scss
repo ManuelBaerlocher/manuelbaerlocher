@@ -1,0 +1,28 @@
+.footer{
+    height: 200px;
+    background: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 71px;
+    margin-right: 22px;
+}
+
+.footerLeftSide{
+    a{
+        margin-left: 12px;
+        margin-right: 12px;
+    }
+}
+
+.footerRightSide{
+    a{
+        margin-left: 46px;
+        margin-right: 46px;
+    }
+
+    img{
+        height: 34px;
+        
+    }
+}

@@ -17,6 +17,7 @@
 
 .myWorkButtons {
     margin-bottom: 25px;
+    display: flex;
     button {
         width: 128px;
         height: 70px;
@@ -65,7 +66,6 @@
         font-weight: bold;
         color: #fa2759;
         margin-bottom: 24px;
-        
     }
 
     button {
@@ -80,7 +80,7 @@
         border: 1px solid #fa2759;
         transition: ease-in-out 225ms;
 
-        &:hover{
+        &:hover {
             background-color: #fa2759;
             color: white;
         }
@@ -94,5 +94,64 @@
     img {
         width: 442px;
         height: 368px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .myWork {
+        background: #111010;
+        padding-top: 0;
+        padding-bottom: 0;
+
+        h2 {
+            font-size: 32px;
+            line-height: 40px;
+        }
+    }
+
+    .myWorkButtons {
+        margin-bottom: 15px;
+        button {
+            width: 92px;
+            height: 50px;
+            font-size: 16px;
+            line-height: 20px;
+        }
+    }
+
+    .myWorkSelectContainer {
+        width: 275px;
+        height: 228px;
+        font-size: 16px;
+        line-height: 20px;
+
+        span {
+            text-align: center;
+            max-width: 208px;
+        }
+
+        button {
+            color: #fb426e;
+            font-weight: 500;
+            font-size: 18px;
+            cursor: pointer;
+            margin-top: 23px;
+            width: 92px;
+            height: 44px;
+            background: #ffffff;
+            border: 1px solid #fa2759;
+            transition: ease-in-out 225ms;
+        }
+    }
+
+    .myWorkContainer {
+        width: 275px;
+        height: 228px;
+        margin: 13px;
+
+        img {
+            width: 275px;
+            height: 228px;
+        }
     }
 }

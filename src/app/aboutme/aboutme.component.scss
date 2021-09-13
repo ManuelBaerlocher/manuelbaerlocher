@@ -95,3 +95,41 @@
 .aboutMeLastContainerSectionTitle{
     margin-bottom: 12px;
 }
+
+@media screen and (max-width: 1000px) {
+    .aboutMe{
+        background: #111010;
+    }
+
+    .aboutMeFirstSection{
+        flex-direction: column;
+        padding-top: 74px;
+    }
+
+    .aboutMeFirstLeftContainer {
+        margin-left: 0;
+        margin-right: 0;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 36px;
+    }
+
+    .aboutMeImgContainer {
+        width: 179px;
+        height: 179px;
+        border-radius: 100%;
+     
+        img {
+            height: 179px;
+        }
+    }
+
+    .aboutMeLine {
+        display: none;
+    }
+
+    .aboutMeLastContainer{
+        flex-direction: column;
+    }
+}
+

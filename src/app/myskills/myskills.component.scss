@@ -63,7 +63,50 @@
     font-size: 18px;
     margin-top: -24px;
 
-    span{
+    span {
         width: 116px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .mySkill {
+        padding-top: 0;
+        background: #111010;
+
+        h2 {
+            margin-top: 61px;
+            line-height: 40px;
+        }
+    }
+
+    .skillsContainer {
+        max-width: 400px;
+        margin-bottom: 28px;
+    }
+
+    .skillClass {
+        margin-left: 5px;
+        margin-right: 5px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .skillImg {
+        width: 35px;
+        height: 35px;
+
+
+        img {
+            height: 18px;
+            
+        }
+    }
+
+    .skillTextBox {
+        width: 107px;
+        height: 70px;
+        margin-top: -16px;
+        font-size: 16px;
+        
     }
 }

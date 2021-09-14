@@ -1,6 +1,6 @@
-.footer{
+.footer {
     height: 200px;
-    background: #FFFFFF;
+    background: #ffffff;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -8,21 +8,52 @@
     margin-right: 22px;
 }
 
-.footerLeftSide{
-    a{
+.footerLeftSide {
+    a {
         margin-left: 12px;
         margin-right: 12px;
     }
 }
 
-.footerRightSide{
-    a{
+.footerRightSide {
+    a {
         margin-left: 46px;
         margin-right: 46px;
     }
 
-    img{
+    img {
         height: 34px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .footer{
+        height: 111px;
+        flex-direction: column-reverse;
+        margin-left: 0;
+        margin-right: 0;
         
+    }
+
+    .footerRightSide {
+        a {
+            margin-left: 46px;
+            margin-right: 46px;
+            
+        }
+    
+        img {
+            margin-top: 20px;
+            height: 34px;
+        }
+    }
+
+    .footerLeftSide {
+        margin-bottom: 9px;
+        a {
+            margin-left: 12px;
+            margin-right: 12px;
+           
+        }
     }
 }

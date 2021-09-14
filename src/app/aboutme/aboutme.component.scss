@@ -92,18 +92,28 @@
     }
 }
 
-.aboutMeLastContainerSectionTitle{
+.aboutMeLastContainerSectionTitle {
     margin-bottom: 12px;
 }
 
 @media screen and (max-width: 1000px) {
-    .aboutMe{
+    .aboutMe {
         background: #111010;
+        padding-bottom: 89px;
     }
 
-    .aboutMeFirstSection{
+    .aboutMeFirstSection {
         flex-direction: column;
         padding-top: 74px;
+        padding-bottom: 24px;
+
+        h2 {
+            margin-top: 0;
+            color: white;
+            font-weight: bold;
+            font-size: 32px;
+            line-height: 40px;
+        }
     }
 
     .aboutMeFirstLeftContainer {
@@ -118,9 +128,21 @@
         width: 179px;
         height: 179px;
         border-radius: 100%;
-     
+
         img {
             height: 179px;
+        }
+    }
+
+    .aboutMeFirstRightContainer {
+        span {
+            color: white;
+            max-width: 486px;
+            font-size: 16px;
+            line-height: 28px;
+            margin-left: 20px;
+            margin-right: 20px;
+            text-align: center;
         }
     }
 
@@ -128,8 +150,21 @@
         display: none;
     }
 
-    .aboutMeLastContainer{
+    .aboutMeLastContainer {
         flex-direction: column;
+        padding-top: 0;
+    }
+
+    .aboutMeLastContainerSection {
+        font-size: 16px;
+    }
+
+    .aboutMeLastContainerImg {
+        margin-top: 24px;
+    }
+
+    .aboutMeLastContainerSectionTitle {
+        font-size: 18px;
+        line-height: 28px;
     }
 }
-

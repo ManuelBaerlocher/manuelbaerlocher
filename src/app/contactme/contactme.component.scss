@@ -18,11 +18,21 @@
         font-weight: 500;
         font-size: 18px;
         color: #ffffff;
-        opacity: 0.66;
+        
+
+        span{
+            opacity: 0.66;
+        }
 
         a {
             text-decoration: none;
             color: #2efcd8;
+            opacity: 0.66;
+            transition: ease-in-out 225ms;
+
+            &:hover{
+                opacity: 1;
+            }
         }
     }
 }

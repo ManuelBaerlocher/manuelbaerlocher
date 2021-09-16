@@ -1,0 +1,18 @@
+.dataProtection {
+    background-color: #131111;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 48px;
+
+    a {
+        color: white;
+        text-decoration: none;
+        transition: ease-in-out 125ms;
+        font-weight: bold;
+
+        &:hover {
+            color: #fa2759;
+        }
+    }
+}

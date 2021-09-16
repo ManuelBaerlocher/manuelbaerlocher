@@ -12,6 +12,21 @@
     a {
         margin-left: 12px;
         margin-right: 12px;
+        font-family: Roboto;
+        font-size: 18px;
+        line-height: 150%;
+        color: #8491a0;
+        text-decoration: none;
+        transition: ease-in-out 225ms;
+        border-bottom: 2px;
+        border-bottom-style: solid;
+        border-color: transparent;
+        
+
+        &:hover{
+            color: #fa2759;
+            border-color: #fa2759;
+        }
     }
 }
 
@@ -23,25 +38,34 @@
 
     img {
         height: 34px;
+        border: 2px;
+        padding: 4px;
+        border-style: solid;
+        border-color: transparent;
+        border-radius: 100%;
+        transition: ease-in-out 225ms;
+
+        &:hover{
+            
+            border-color: #fa2759;
+        }
     }
 }
 
 @media screen and (max-width: 1000px) {
-    .footer{
+    .footer {
         height: 111px;
         flex-direction: column-reverse;
         margin-left: 0;
         margin-right: 0;
-        
     }
 
     .footerRightSide {
         a {
             margin-left: 46px;
             margin-right: 46px;
-            
         }
-    
+
         img {
             margin-top: 20px;
             height: 34px;
@@ -53,7 +77,6 @@
         a {
             margin-left: 12px;
             margin-right: 12px;
-           
         }
     }
 }

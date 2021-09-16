@@ -79,7 +79,18 @@
         border-radius: 100%;
         padding: 23px;
         cursor: pointer;
+        transition: ease-in-out 225ms;
+        margin-bottom: 6px;
+
+        &:hover{
+            width: 20px;
+            padding: 23px;
+            border: 3px solid #ffffff;
+            margin-bottom: 0px;
+        }
     }
+
+ 
 }
 
 @media screen and (max-width: 1000px) {

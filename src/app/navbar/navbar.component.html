@@ -1,4 +1,4 @@
-<div class="navbar">
+<div id="home" class="navbar">
     <div class="navbar-left">
         <img routerLink="" src="../../assets/img/Logo.png">
     </div>
@@ -9,6 +9,17 @@
         <a href=#myWork>PORTFOLIO</a>
     </div>
     <div class="responsiveMenu">
-        <img src="../../assets/img/mobile-menu.png">
+        <img (click)="openRespMenu();" src="../../assets/img/mobile-menu.png">
     </div>
+    <div id="responsiveMenu" [style]="'transform: translatex(' + transformPercent + ');'">
+        <a href=#home>HOME</a>
+        <a href=#aboutMe>ABOUT</a>
+        <a href=#myWork>PORTFOLIO</a>
+    </div>
+    <div class="overlay d-none">
+
+    </div>
+    
+
+
 </div>

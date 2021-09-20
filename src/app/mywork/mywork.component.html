@@ -5,7 +5,18 @@
         <button class="selectButton">Angular</button>
         <button>Java Script</button>
     </div>
-    <div class="myWorkContainers">
+    <div *ngFor="let mywork of myworks" class="myWorkContainers">
+
+        <div class="myWorkContainer">
+            <div class="myWorkSelectContainer">
+                <span class="SelectContainerTitle">{{mywork.title}}</span>
+                <span>{{mywork.text}}</span>
+                <button>Try out</button>
+            </div>
+            <img src="../../assets/img/{{mywork.image}}">
+        </div>
+
+        <!-- 
         <div class="myWorkContainer">
             <img src="../../assets/img/laptop.jpg">
         </div>
@@ -23,5 +34,6 @@
         <div class="myWorkContainer">
             <img src="../../assets/img/laptop.jpg">
         </div>
+        -->
     </div>
 </div>

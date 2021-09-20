@@ -9,6 +9,7 @@ import { FooterComponent } from '../footer/footer.component';
 })
 export class NavbarComponent implements OnInit {
   transformPercent = '100%';
+  overlayShow = 'd-none';
   constructor(){
     
   }
@@ -19,8 +20,18 @@ export class NavbarComponent implements OnInit {
   openRespMenu(){
     
     console.log(this.transformPercent) 
-    
+    this.overlayShow = '';
     this.transformPercent = '0%'
+    console.log(this.transformPercent)
+
+  
+  }
+
+ closeRespMenu(){
+    
+    console.log(this.transformPercent) 
+    this.overlayShow = 'd-none';
+    this.transformPercent = '100%'
     console.log(this.transformPercent)
 
   

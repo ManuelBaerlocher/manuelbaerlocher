@@ -11,14 +11,12 @@
     <div class="responsiveMenu">
         <img (click)="openRespMenu();" src="../../assets/img/mobile-menu.png">
     </div>
-    <div id="responsiveMenu" [style]="'transform: translatex(' + transformPercent + ');'">
+    <div (mouseleave)="closeRespMenu();" id="responsiveMenu" [style]="'transform: translatex(' + transformPercent + ');'">
         <a href=#home>HOME</a>
         <a href=#aboutMe>ABOUT</a>
         <a href=#myWork>PORTFOLIO</a>
     </div>
-    <div class="overlay d-none">
-
-    </div>
+    <div (click)="closeRespMenu();" class="overlay {{overlayShow}}"></div>
     
 
 

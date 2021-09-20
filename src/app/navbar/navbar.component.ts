@@ -10,6 +10,7 @@ import { FooterComponent } from '../footer/footer.component';
 export class NavbarComponent implements OnInit {
   transformPercent = '100%';
   overlayShow = 'd-none';
+  divanzeigen = false;
   constructor(){
     
   }
@@ -21,6 +22,7 @@ export class NavbarComponent implements OnInit {
     
     console.log(this.transformPercent) 
     this.overlayShow = '';
+    this.divanzeigen = true;
     this.transformPercent = '0%'
     console.log(this.transformPercent)
 
@@ -31,6 +33,7 @@ export class NavbarComponent implements OnInit {
     
     console.log(this.transformPercent) 
     this.overlayShow = 'd-none';
+    this.divanzeigen = false;
     this.transformPercent = '100%'
     console.log(this.transformPercent)
 

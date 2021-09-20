@@ -16,8 +16,5 @@
         <a href=#aboutMe>ABOUT</a>
         <a href=#myWork>PORTFOLIO</a>
     </div>
-    <div (click)="closeRespMenu();" class="overlay {{overlayShow}}"></div>
-    
-
-
+    <div *ngIf="divanzeigen" (click)="closeRespMenu();" class="overlay"></div>
 </div>

@@ -47,14 +47,10 @@
     flex-wrap: wrap;
     justify-content: center;
     max-width: 1100px;
-    transition: ease-in-out 1000ms;
+    
 
     
-        &:hover{
-            .myWorkSelectContainer{
-                display: flex;
-            }
-        }
+
     
 }
 
@@ -69,7 +65,7 @@
     justify-content: center;
     align-items: center;
     font-size: 18px;
-    transition: ease-in-out 1000ms;
+    
 
     .SelectContainerTitle {
         text-align: center;
@@ -100,6 +96,12 @@
     width: 442px;
     height: 368px;
     margin: 23px;
+
+    &:hover{
+        .myWorkSelectContainer{
+            display: flex;
+        }
+    }
 
     img {
         width: 442px;

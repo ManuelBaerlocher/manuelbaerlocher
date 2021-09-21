@@ -1,39 +1,18 @@
 <div id="myWork" class="myWork">
     <h2>MY work</h2>
     <div class="myWorkButtons">
-        <button>All</button>
-        <button class="selectButton">Angular</button>
-        <button>Java Script</button>
+        <button (click)="selectAll();" [ngClass]="{'selectButton': selectionAll}">All</button>
+        <button (click)="selectAngular();" [ngClass]="{'selectButton': selectionAngular}">Angular</button>
+        <button (click)="selectJavascript();" [ngClass]="{'selectButton': selectionJavascript}">Java Script</button>
     </div>
-    <div *ngFor="let mywork of myworks" class="myWorkContainers">
-
-        <div class="myWorkContainer">
-            <div class="myWorkSelectContainer">
-                <span class="SelectContainerTitle">{{mywork.title}}</span>
-                <span>{{mywork.text}}</span>
-                <button>Try out</button>
+    <div class="myWorkContainers">
+            <div *ngFor="let mywork of mySelectWorks" class="myWorkContainer">
+                <div class="myWorkSelectContainer">
+                    <span class="SelectContainerTitle">{{mywork.title}}</span>
+                    <span>{{mywork.text}}</span>
+                    <a href={{mywork.link}} target="_blank"><button>Try out</button></a>
+                </div>
+                <img src="{{mywork.image}}">
             </div>
-            <img src="../../assets/img/{{mywork.image}}">
-        </div>
-
-        <!-- 
-        <div class="myWorkContainer">
-            <img src="../../assets/img/laptop.jpg">
-        </div>
-        <div class="myWorkContainer">
-            <div class="myWorkSelectContainer">
-                <span class="SelectContainerTitle">EL Pollo Loco</span>
-                <span>JavaScript -based jump and run game.</span>
-                <button>Try out</button>
-            </div>
-            <img src="../../assets/img/laptop.jpg">
-        </div>
-        <div class="myWorkContainer">
-            <img src="../../assets/img/laptop.jpg">
-        </div>
-        <div class="myWorkContainer">
-            <img src="../../assets/img/laptop.jpg">
-        </div>
-        -->
     </div>
 </div>

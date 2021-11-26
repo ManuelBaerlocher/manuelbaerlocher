@@ -13,7 +13,7 @@ export class MyworkComponent implements OnInit {
       'text': "JavaScript -based jump and run game.",
       'class': "Javascript",
       'image': "../../assets/img/laptop.jpg",
-      'link': "https://google.ch"
+      'link': "https://www.google.ch/"
     },
     {
       'title': "My Page",
@@ -28,14 +28,14 @@ export class MyworkComponent implements OnInit {
       'text': "Kanban Board",
       'class': "Javascript",
       'image': "../../assets/img/laptop.jpg",
-      'link': "https://google.ch"
+      'link': "https://www.google.ch/"
     },
     {
       'title': "eat.ch",
       'text': "Side to order and deliverey eat",
       'class': "Javascript",
       'image': "../../assets/img/laptop.jpg",
-      'link': "https://google.ch"
+      'link': "https://www.google.ch/"
     },
   ]
 
@@ -65,13 +65,13 @@ export class MyworkComponent implements OnInit {
       let text = this.myworks[i].text;
       let image = this.myworks[i].image;
       let link = this.myworks[i].link;
-      let test = {
+      let selectmyWork = {
         'title': title,
         'text': text,
         'image': image,
         'link': link
       }
-      this.mySelectWorks.push(test)
+      this.mySelectWorks.push(selectmyWork)
 
     }
   }

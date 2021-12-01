@@ -12,15 +12,10 @@ export class ContactmeComponent implements OnInit {
   contactForm = this.fb.group({
     name: ['', Validators.required],
     mail: [''],
-    message: [''],
-    aliases: this.fb.array([
-      this.fb.control('')
-    ])
+    message: ['']
   });
 
-  get aliases() {
-    return this.contactForm.get('aliases') as FormArray;
-  }
+
 
 
   constructor(private fb: FormBuilder) { }

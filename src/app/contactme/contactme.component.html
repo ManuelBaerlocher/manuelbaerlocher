@@ -2,51 +2,23 @@
     <h1>Contact me.</h1>
     <div class="contactMeHead"><span> Get in touch via the form below, or by emailing </span><a
             href="mailto:hello@manuel.ch">hello@manuel.ch</a></div>
-    <form (submit)="sendMail()" class="contactMeInputSection" accept-charset="UTF-8">
-        <div>
-            <div class="contactMeInputContainer">
-                <span>Name</span>
-                <input name="name" required="required" type="text" placeholder="Enter your name">
-            </div>
-            <div class="contactMeInputContainer">
-                <span>Email address</span>
-                <input id="mail" name="mail" required="required" id="mail" placeholder="Enter your mail">
-            </div>
-            <div class="contactMeInputContainer">
-                <span>Message</span>
-                <textarea id="message" name="message" required="required" class="contactMeInputMessage"
-                    placeholder="Enter your message"></textarea>
-            </div>
-        </div>
-        <input id="submitButton" type="submit" value="Submit" class="contactMeButton">
-    </form>
-    <span class="contactMeHead" id="afterSendMail"></span>
-</div>
-
-
-<div id="contactMe" class="contactMe">
-    <h1>Contact me.</h1>
-    <div class="contactMeHead"><span> Get in touch via the form below, or by emailing </span><a
-            href="mailto:hello@manuel.ch">hello@manuel.ch</a></div>
     <form [formGroup]="contactForm" (ngSubmit)="sendMail()" class="contactMeInputSection" accept-charset="UTF-8">
-        <div>
-            <div class="contactMeInputContainer">
-                <span>Name</span>
-                <label for="name">Name</label>
-                <input id="name" formControlName="name" required="required" type="text" placeholder="Enter your name">
-            </div>
-            <div class="contactMeInputContainer">
-                <span>Email address</span>
-                <input formControlName="mail" name="mail" required="required" id="mail" placeholder="Enter your mail">
-            </div>
-            <div class="contactMeInputContainer">
-                <span>Message</span>
-                <textarea formControlName="message" name="message" required="required" class="contactMeInputMessage"
-                    placeholder="Enter your message"></textarea>
-            </div>
+
+        <div class="contactMeInputContainer">
+            <label for="name">Name</label>
+            <input id="name" formControlName="name" required="required" type="text" placeholder="Enter your name">
         </div>
-        <input id="submitButton" type="submit" value="Submit" class="contactMeButton">
+        <div class="contactMeInputContainer">
+            <label for="mail">Email address</label>
+            <input id="mail" formControlName="mail" required="required" placeholder="Enter your mail">
+        </div>
+        <div class="contactMeInputContainer">
+            <label for="message">Message</label>
+            <textarea id="message" formControlName="message" required="required" class="contactMeInputMessage"
+                placeholder="Enter your message"></textarea>
+        </div>
+
+        <button id="submitButton" class="contactMeButton">Submit</button>
     </form>
     <span class="contactMeHead" id="afterSendMail"></span>
 </div>
-

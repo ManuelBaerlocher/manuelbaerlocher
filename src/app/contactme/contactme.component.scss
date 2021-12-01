@@ -18,9 +18,8 @@
         font-weight: 500;
         font-size: 18px;
         color: #ffffff;
-        
 
-        span{
+        span {
             opacity: 0.66;
         }
 
@@ -30,7 +29,7 @@
             opacity: 0.66;
             transition: ease-in-out 225ms;
 
-            &:hover{
+            &:hover {
                 opacity: 1;
             }
         }
@@ -74,6 +73,13 @@
     flex-direction: column;
     margin-bottom: 20px;
     span {
+        margin-bottom: 16px;
+        color: #f2f2f2;
+        font-weight: 500;
+        font-size: 18px;
+    }
+
+    label {
         margin-bottom: 16px;
         color: #f2f2f2;
         font-weight: 500;
@@ -130,25 +136,22 @@
         }
     }
 
-    .contactMeInputContainer{
-        
-        input{
+    .contactMeInputContainer {
+        input {
             width: auto;
         }
 
-        textarea{
+        textarea {
             width: auto;
         }
     }
 
-    .contactMeInputSection{
+    .contactMeInputSection {
         align-items: normal;
     }
 
-    .contactMeButton{
+    .contactMeButton {
         display: flex;
         justify-content: flex-end;
     }
-
-
 }

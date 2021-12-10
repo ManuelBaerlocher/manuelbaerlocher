@@ -107,16 +107,12 @@
         &.ng-dirty {
             &.ng-invalid {
                 border: 1px solid #f34e4e;
-                
             }
         }
 
         &.ng-valid {
             border: 1px solid #2efcd8;
-            
         }
-
-
     }
 
     .error {

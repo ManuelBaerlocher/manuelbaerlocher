@@ -40,7 +40,7 @@
                 </ng-container>
             </ng-container>
         </div>
-        
+
 
         <div class="contactMeInputContainer">
             <label for="message">Message</label>
@@ -61,7 +61,8 @@
             </ng-container>
         </div>
 
-        <button *ngIf="!(contactForm.valid && (contactForm.dirty || contactForm.touched))" [disabled]="!(contactForm.valid && (contactForm.dirty || contactForm.touched))" type="submit"
+        <button *ngIf="!(contactForm.valid && (contactForm.dirty || contactForm.touched))"
+            [disabled]="!(contactForm.valid && (contactForm.dirty || contactForm.touched))" type="submit"
             class="contactMeButton">Submit
         </button>
     </form>

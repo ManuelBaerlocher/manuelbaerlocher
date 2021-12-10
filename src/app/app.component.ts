@@ -1,6 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
-import { ImprintComponent } from './imprint/imprint.component';
+import { Component } from '@angular/core';
+
 
 
 @Component({
@@ -8,10 +7,8 @@ import { ImprintComponent } from './imprint/imprint.component';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent{
+export class AppComponent {
   title: any;
-  
-
-  
+  constructor() { }
 
 }

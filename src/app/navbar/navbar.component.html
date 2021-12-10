@@ -4,17 +4,20 @@
     </div>
 
     <div class="navbar-right">
-        <a routerLink="">HOME</a>
-        <a href=#aboutMe>ABOUT</a>
+        <a routerLink="">{{'navbar.home' | translate }}</a>
+        <a href=#aboutMe>{{'navbar.about' | translate }}</a>
         <a href=#myWork>PORTFOLIO</a>
+        <span (click)="changeLanguage()">{{'navbar.language' | translate }}</span>
     </div>
     <div class="responsiveMenu">
         <img (click)="openRespMenu();" src="../../assets/img/mobile-menu.png">
     </div>
     <div (mouseleave)="closeRespMenu();" id="responsiveMenu" [style]="'transform: translatex(' + transformPercent + ');'">
-        <a href=#home>HOME</a>
-        <a href=#aboutMe>ABOUT</a>
+        <a href=#home>{{'navbar.home' | translate }}</a>
+        <a href=#aboutMe>{{'navbar.about' | translate }}</a>
         <a href=#myWork>PORTFOLIO</a>
+        <span (click)="changeLanguage()">{{'navbar.language' | translate }}</span>
+        
     </div>
     <div *ngIf="divanzeigen" (click)="closeRespMenu();" class="overlay"></div>
 </div>

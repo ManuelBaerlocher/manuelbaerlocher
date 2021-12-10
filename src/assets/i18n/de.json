@@ -1,0 +1,25 @@
+{
+    "navbar": {
+        "home": "STARTSEITE",
+        "about": "ÜBER MICH",
+        "language": "EN"
+    },
+
+    "head": {
+        "hi": "Hallo",
+        "im": "Ich bin",
+        "develop": "Entwickl",
+        "contact": "Kontakt"
+    },
+
+
+
+    "footer": {
+        "imprint": "Impressum - Rechtlicher Hinweis",
+        "data-protection": "Datenschutz"
+    }
+    
+    
+}
+
+

@@ -1,0 +1,21 @@
+{
+    "navbar": {
+        "home": "HOME",
+        "about": "ABOUT",
+        "language": "DE"
+    },
+
+    "head": {
+        "hi": "Hi",
+        "im": "I'm",
+        "develop": "develop",
+        "contact": "Contact me"
+    },
+
+    "footer": {
+        "imprint": "Imprint - Legal Notice",
+        "data-protection": "Data protection"
+    }
+}
+
+

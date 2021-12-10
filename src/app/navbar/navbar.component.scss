@@ -11,12 +11,13 @@
         cursor: pointer;
     }
 
-    a {
+    a, span {
         color: white;
         margin-left: 60px;
         text-decoration: none;
         transition: ease-in-out 125ms;
         font-size: 16px;
+        cursor: pointer;
 
         &:hover {
             color: #fa2759;
@@ -56,7 +57,7 @@
     justify-content: flex-start;
     
     
-    a {
+    a, span {
         margin-left: 16px;
         font-size: 20px;
         margin-top: 4px;

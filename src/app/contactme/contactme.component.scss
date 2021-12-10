@@ -65,6 +65,10 @@
             color: white;
             background-color: #2dfcd8;
         }
+
+        &:disabled {
+            opacity: 0.2;
+        }
     }
 }
 
@@ -91,11 +95,34 @@
         height: 39px;
         background: #1a1a1a;
         border-style: none;
+        border-radius: 2px;
         font-weight: 500;
         font-size: 18px;
         line-height: 44px;
         color: #989898;
         padding-left: 17px;
+        outline-color: white;
+
+        &.ng-touched,
+        &.ng-dirty {
+            &.ng-invalid {
+                border: 1px solid #f34e4e;
+                
+            }
+        }
+
+        &.ng-valid {
+            border: 1px solid #2efcd8;
+            
+        }
+
+
+    }
+
+    .error {
+        color: #f34e4e;
+        font-weight: 500;
+        font-size: 18px;
     }
 
     textarea {
@@ -104,13 +131,37 @@
 
         background: #1a1a1a;
         border-style: none;
+
         font-weight: 500;
         font-size: 18px;
         line-height: 44px;
-        color: #989898;
+        color: white;
         padding-left: 17px;
         resize: none;
+        outline-color: white;
+
+        &.ng-touched,
+        &.ng-dirty {
+            &.ng-invalid {
+                border: 1px solid #f34e4e;
+                border-radius: 2px;
+            }
+        }
+
+        &.ng-valid {
+            border: 1px solid #2efcd8;
+            border-radius: 2px;
+        }
+
+        .error {
+            border: 1px solid #f34e4e;
+            border-radius: 2px;
+        }
     }
+}
+
+p {
+    color: white;
 }
 
 @media screen and (max-width: 1000px) {

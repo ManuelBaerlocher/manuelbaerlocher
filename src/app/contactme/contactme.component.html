@@ -2,23 +2,70 @@
     <h1>Contact me.</h1>
     <div class="contactMeHead"><span> Get in touch via the form below, or by emailing </span><a
             href="mailto:hello@manuel.ch">hello@manuel.ch</a></div>
-    <form [formGroup]="contactForm" (ngSubmit)="sendMail()" class="contactMeInputSection" accept-charset="UTF-8">
+
+    <form [formGroup]="contactForm" (submit)="sendMail()" class="contactMeInputSection" accept-charset="UTF-8">
 
         <div class="contactMeInputContainer">
             <label for="name">Name</label>
-            <input id="name" formControlName="name" required="required" type="text" placeholder="Enter your name">
-        </div>
-        <div class="contactMeInputContainer">
-            <label for="mail">Email address</label>
-            <input id="mail" formControlName="mail" required="required" placeholder="Enter your mail">
-        </div>
-        <div class="contactMeInputContainer">
-            <label for="message">Message</label>
-            <textarea id="message" formControlName="message" required="required" class="contactMeInputMessage"
-                placeholder="Enter your message"></textarea>
+            <input formControlName="name" type="text">
+            <ng-container *ngIf="contactForm.controls['name'] as name">
+                <ng-container *ngIf="name.dirty || name.touched">
+                    <ng-container *ngIf="name.errors as errors">
+                        <p class="error" *ngIf="errors.required">
+                            Enter your name
+                        </p>
+
+                        <p class="error" *ngIf="errors.minlength">
+                            Mindestens 3 Buchstaben
+                        </p>
+                    </ng-container>
+                </ng-container>
+            </ng-container>
         </div>
 
-        <button id="submitButton" class="contactMeButton">Submit</button>
+        <div class="contactMeInputContainer">
+            <label for="mail">Email address</label>
+            <input formControlName="mail" type="email">
+            <ng-container *ngIf="contactForm.controls['mail'] as mail">
+                <ng-container *ngIf="mail.dirty || mail.touched">
+                    <ng-container *ngIf="mail.errors as errors">
+                        <p class="error" *ngIf="errors.required">
+                            Enter your mail
+                        </p>
+
+                        <p class="error" *ngIf="errors.email">
+                            Das ist keine Email Adresse!
+                        </p>
+                    </ng-container>
+                </ng-container>
+            </ng-container>
+        </div>
+
+        <div class="contactMeInputContainer">
+            <label for="message">Message</label>
+            <textarea formControlName="message" type="textarea" class="Message"
+                placeholder="Enter your message"></textarea>
+            <ng-container *ngIf="contactForm.controls['message'] as message">
+                <ng-container *ngIf="message.dirty || message.touched">
+                    <ng-container *ngIf="message.errors as errors">
+                        <p class="error" *ngIf="errors.required">
+                            Enter your message
+                        </p>
+
+                        <p class="error" *ngIf="errors.minlength">
+                            Mindestens 3 Buchstaben
+                        </p>
+                    </ng-container>
+                </ng-container>
+            </ng-container>
+        </div>
+
+        <button *ngIf="!(contactForm.valid && (contactForm.dirty || contactForm.touched))" [disabled]="!(contactForm.valid && (contactForm.dirty || contactForm.touched))" type="submit"
+            class="contactMeButton">Submit
+        </button>
     </form>
+
     <span class="contactMeHead" id="afterSendMail"></span>
+
+    <p>Form Status: {{ contactForm.status }}</p>
 </div>

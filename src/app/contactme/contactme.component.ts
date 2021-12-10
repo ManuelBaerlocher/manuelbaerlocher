@@ -1,30 +1,31 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder } from '@angular/forms';
+import { FormBuilder, FormControl, FormGroup } from '@angular/forms';
 import { Validators } from '@angular/forms';
-import { FormArray } from '@angular/forms';
+
 
 @Component({
   selector: 'app-contactme',
   templateUrl: './contactme.component.html',
   styleUrls: ['./contactme.component.scss']
 })
-export class ContactmeComponent implements OnInit {
-  contactForm = this.fb.group({
-    name: ['', Validators.required],
-    mail: [''],
-    message: ['']
+export class ContactmeComponent {
+
+  public contactForm: FormGroup = new FormGroup({
+    name: new FormControl('', [
+      Validators.required,
+      Validators.minLength(3)
+    ], []),
+    mail: new FormControl('', [
+      Validators.required,
+      Validators.email
+    ], []),
+    message: new FormControl('', [
+      Validators.required,
+      Validators.minLength(3)
+    ], []),
   });
 
-
-
-
-  constructor(private fb: FormBuilder) { }
-
-
-  ngOnInit(): void {
-
-  }
-
+  constructor() { }
 
   async sendMail() {
     let formData = new FormData();
@@ -37,10 +38,5 @@ export class ContactmeComponent implements OnInit {
     });
 
     /*changeHTML();*/
-  }
-
-  test() {
-    console.log(this.contactForm.value['name']);
-
   }
 }

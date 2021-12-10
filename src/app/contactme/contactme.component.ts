@@ -27,6 +27,8 @@ export class ContactmeComponent {
 
   constructor() { }
 
+  mailSend = false;
+
   async sendMail() {
     let formData = new FormData();
     formData.append('name', this.contactForm.value['name'])
@@ -35,8 +37,9 @@ export class ContactmeComponent {
     await fetch("http://manuel-baerlocher.developerakademie.com/Kontaktformular/send_mail.php", {
       method: "POST",
       body: formData
+      
     });
-
+    this.mailSend = true;
     /*changeHTML();*/
   }
 }

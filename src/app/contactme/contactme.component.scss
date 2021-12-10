@@ -42,6 +42,13 @@
     flex-direction: column;
     align-items: flex-end;
 
+    .buttonValid {
+        &:hover {
+            color: white;
+            background-color: #2dfcd8;
+            cursor: pointer;
+        }
+    }
     button {
         color: #2dfcd8;
         background-color: transparent;
@@ -56,15 +63,10 @@
         font-size: 18px;
         line-height: 14px;
         text-align: center;
-        cursor: pointer;
+
         margin-top: 24px;
 
         transition: ease-in-out 125ms;
-
-        &:hover {
-            color: white;
-            background-color: #2dfcd8;
-        }
 
         &:disabled {
             opacity: 0.2;
@@ -75,7 +77,7 @@
 .contactMeInputContainer {
     display: flex;
     flex-direction: column;
-    margin-bottom: 20px;
+    padding-bottom: 20px;
     span {
         margin-bottom: 16px;
         color: #f2f2f2;
@@ -119,6 +121,7 @@
         color: #f34e4e;
         font-weight: 500;
         font-size: 18px;
+        margin-bottom: 0;
     }
 
     textarea {
@@ -148,16 +151,19 @@
             border: 1px solid #2efcd8;
             border-radius: 2px;
         }
-
-        .error {
-            border: 1px solid #f34e4e;
-            border-radius: 2px;
-        }
     }
 }
 
 p {
     color: white;
+}
+
+.sendMail {
+    font-weight: 500;
+    font-size: 18px;
+    color: #ffffff;
+    margin-top: 24px;
+    opacity: 0.66;
 }
 
 @media screen and (max-width: 1000px) {

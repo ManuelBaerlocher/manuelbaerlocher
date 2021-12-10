@@ -12,11 +12,10 @@
                 <ng-container *ngIf="name.dirty || name.touched">
                     <ng-container *ngIf="name.errors as errors">
                         <p class="error" *ngIf="errors.required">
-                            Enter your name
+                            Enter your name.
                         </p>
-
                         <p class="error" *ngIf="errors.minlength">
-                            Mindestens 3 Buchstaben
+                            Minimum 3 letters.
                         </p>
                     </ng-container>
                 </ng-container>
@@ -30,11 +29,10 @@
                 <ng-container *ngIf="mail.dirty || mail.touched">
                     <ng-container *ngIf="mail.errors as errors">
                         <p class="error" *ngIf="errors.required">
-                            Enter your mail
+                            Enter your mail.
                         </p>
-
                         <p class="error" *ngIf="errors.email">
-                            Das ist keine Email Adresse!
+                            This is not an e-mail address.
                         </p>
                     </ng-container>
                 </ng-container>
@@ -44,30 +42,28 @@
 
         <div class="contactMeInputContainer">
             <label for="message">Message</label>
-            <textarea formControlName="message" type="textarea" class="Message"
-                placeholder="Enter your message"></textarea>
+            <textarea formControlName="message" type="textarea" class="Message"></textarea>
             <ng-container *ngIf="contactForm.controls['message'] as message">
                 <ng-container *ngIf="message.dirty || message.touched">
                     <ng-container *ngIf="message.errors as errors">
                         <p class="error" *ngIf="errors.required">
-                            Enter your message
+                            Enter your message.
                         </p>
-
                         <p class="error" *ngIf="errors.minlength">
-                            Mindestens 3 Buchstaben
+                            Minimum 3 letters.
                         </p>
                     </ng-container>
                 </ng-container>
             </ng-container>
         </div>
 
-        <button *ngIf="!(contactForm.valid && (contactForm.dirty || contactForm.touched))"
-            [disabled]="!(contactForm.valid && (contactForm.dirty || contactForm.touched))" type="submit"
+        <button [class.buttonValid]="contactForm.valid && !mailSend"
+            [disabled]="!(contactForm.valid  && (contactForm.dirty || contactForm.touched)&& !mailSend)" type="submit"
             class="contactMeButton">Submit
         </button>
     </form>
 
     <span class="contactMeHead" id="afterSendMail"></span>
 
-    <p>Form Status: {{ contactForm.status }}</p>
-</div>
+    <span class="sendMail" *ngIf="mailSend">Thank you for your message, I will get back to you.</span>
+</div>0

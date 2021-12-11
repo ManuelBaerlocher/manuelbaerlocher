@@ -2,7 +2,7 @@
     "navbar": {
         "home": "STARTSEITE",
         "about": "ÜBER MICH",
-        "language": "EN"
+        "language": "DE"
     },
 
     "head": {
@@ -12,7 +12,38 @@
         "contact": "Kontakt"
     },
 
+    "skills": {
+        "title": "Meine Fähigkeiten",
+        "design": "Gestalterisches Denken",
+        "test": "Test Automatisierung",
+        "database": "Datenbanken"
+    },
 
+    "work": {
+        "title": "Meine Projekte",
+        "all": "Alle",
+        "try": "Ausprobieren"
+    },
+
+    "aboutme": {
+        "title": "Über mich.",
+        "text": "All",
+        "fieldtitle1": "MEINE REISE BEGANN"
+    },
+
+    "contact": {
+        "title": "Kontaktieren Sie mich.",
+        "text": "Kontaktieren Sie mich über das untenstehende Formular oder per E-Mail an",
+        "name": "Geben Sie Ihren Namen ein.",
+        "minlength": "Mindestens 3 Buchstaben.",
+        "mailtitle": "E-Mail Adresse",
+        "mail": "Geben Sie Ihre E-Mail ein.",
+        "mailerror": "Dies ist keine E-Mail Adresse.",
+        "messagetitle": "Nachricht",
+        "message": "Geben Sie Ihre Nachricht ein.",
+        "sendmail": "Vielen Dank für Ihre Nachricht, ich werde mich bei Ihnen melden.",
+        "submit": "Senden"
+    },
 
     "footer": {
         "imprint": "Impressum - Rechtlicher Hinweis",

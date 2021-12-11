@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { TestBed } from '@angular/core/testing';
+
 
 @Component({
   selector: 'app-mywork',
@@ -32,7 +32,7 @@ export class MyworkComponent implements OnInit {
     },
     {
       'title': "eat.ch",
-      'text': "Side to order and deliverey eat",
+      'text': "Side to order and deliverey eat ",
       'class': "Javascript",
       'image': "../../assets/img/laptop.jpg",
       'link': "https://www.google.ch/"

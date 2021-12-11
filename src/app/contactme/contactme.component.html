@@ -1,6 +1,6 @@
 <div id="contactMe" class="contactMe">
-    <h1>Contact me.</h1>
-    <div class="contactMeHead"><span> Get in touch via the form below, or by emailing </span><a
+    <h1>{{'contact.title' | translate }}</h1>
+    <div class="contactMeHead"><span> {{'contact.text' | translate }} </span><a
             href="mailto:hello@manuel.ch">hello@manuel.ch</a></div>
 
     <form [formGroup]="contactForm" (submit)="sendMail()" class="contactMeInputSection" accept-charset="UTF-8">
@@ -12,10 +12,10 @@
                 <ng-container *ngIf="name.dirty || name.touched">
                     <ng-container *ngIf="name.errors as errors">
                         <p class="error" *ngIf="errors.required">
-                            Enter your name.
+                            {{'contact.name' | translate }}
                         </p>
                         <p class="error" *ngIf="errors.minlength">
-                            Minimum 3 letters.
+                            {{'contact.minlength' | translate }}
                         </p>
                     </ng-container>
                 </ng-container>
@@ -29,10 +29,10 @@
                 <ng-container *ngIf="mail.dirty || mail.touched">
                     <ng-container *ngIf="mail.errors as errors">
                         <p class="error" *ngIf="errors.required">
-                            Enter your mail.
+                            {{'contact.mail' | translate }}
                         </p>
                         <p class="error" *ngIf="errors.email">
-                            This is not an e-mail address.
+                            {{'contact.mailerror' | translate }}
                         </p>
                     </ng-container>
                 </ng-container>
@@ -41,16 +41,16 @@
 
 
         <div class="contactMeInputContainer">
-            <label for="message">Message</label>
+            <label for="message">{{'contact.messagetitle' | translate }}</label>
             <textarea formControlName="message" type="textarea" class="Message"></textarea>
             <ng-container *ngIf="contactForm.controls['message'] as message">
                 <ng-container *ngIf="message.dirty || message.touched">
                     <ng-container *ngIf="message.errors as errors">
                         <p class="error" *ngIf="errors.required">
-                            Enter your message.
+                            {{'contact.message' | translate }}
                         </p>
                         <p class="error" *ngIf="errors.minlength">
-                            Minimum 3 letters.
+                            {{'contact.minlength' | translate }}
                         </p>
                     </ng-container>
                 </ng-container>
@@ -59,11 +59,11 @@
 
         <button [class.buttonValid]="contactForm.valid && !mailSend"
             [disabled]="!(contactForm.valid  && (contactForm.dirty || contactForm.touched)&& !mailSend)" type="submit"
-            class="contactMeButton">Submit
+            class="contactMeButton">{{'contact.submit' | translate }}
         </button>
     </form>
 
     <span class="contactMeHead" id="afterSendMail"></span>
 
-    <span class="sendMail" *ngIf="mailSend">Thank you for your message, I will get back to you.</span>
+    <span class="sendMail" *ngIf="mailSend">{{'contact.sendmail' | translate }}</span>
 </div>

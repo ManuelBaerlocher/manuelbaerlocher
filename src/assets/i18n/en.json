@@ -2,7 +2,7 @@
     "navbar": {
         "home": "HOME",
         "about": "ABOUT",
-        "language": "DE"
+        "language": "EN"
     },
 
     "head": {
@@ -10,6 +10,39 @@
         "im": "I'm",
         "develop": "develop",
         "contact": "Contact me"
+    },
+
+    "skills": {
+        "title": "My Skills",
+        "design": "Design Thinking",
+        "test": "Test automation",
+        "database": "Databases"
+    },
+
+    "work": {
+        "title": "My work",
+        "all": "All",
+        "try": "Try out"
+    },
+
+    "aboutme": {
+        "title": "About me.",
+        "text": "All",
+        "fieldtitle1": "MY JOURNEY BEGAN"
+    },
+
+    "contact": {
+        "title": "Contact me.",
+        "text": "Get in touch via the form below, or by emailing",
+        "name": "Enter your name.",
+        "minlength": "Minimum 3 letters.",
+        "mailtitle": "Email address",
+        "mail": "Enter your mail.",
+        "mailerror": "This is not an e-mail address.",
+        "messagetitle": "Message",
+        "message": "Enter your message.",
+        "sendmail": "Thank you for your message, I will get back to you.",
+        "submit": "Submit"
     },
 
     "footer": {

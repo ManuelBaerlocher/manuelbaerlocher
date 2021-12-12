@@ -1,23 +1,32 @@
 import { Component, OnInit } from '@angular/core';
 
 
+
+
+
+
 @Component({
   selector: 'app-mywork',
   templateUrl: './mywork.component.html',
-  styleUrls: ['./mywork.component.scss']
+  styleUrls: ['./mywork.component.scss'],
+
+  
 })
 export class MyworkComponent implements OnInit {
+  
+  
+  
   myworks = [
     {
-      'title': "EL Pollo Loco",
-      'text': "JavaScript -based jump and run game.",
+      'title': "work.elpollolocotitle",
+      'text': "work.elpollolocotext",
       'class': "Javascript",
       'image': "../../assets/img/laptop.jpg",
       'link': "https://www.google.ch/"
     },
     {
-      'title': "My Page",
-      'text': "My Page build with Angular",
+      'title': "work.mypagetitle",
+      'text': "work.mypagetext",
       'class': "Angular",
       'image': "../../assets/img/laptop.jpg",
       'link': ""
@@ -32,7 +41,7 @@ export class MyworkComponent implements OnInit {
     },
     {
       'title': "eat.ch",
-      'text': "Side to order and deliverey eat ",
+      'text': "work.eat.chtext",
       'class': "Javascript",
       'image': "../../assets/img/laptop.jpg",
       'link': "https://www.google.ch/"
@@ -43,13 +52,19 @@ export class MyworkComponent implements OnInit {
   selectionAll = true;
   selectionAngular = false;
   selectionJavascript = false;
+  
 
   constructor() {
 
   }
   ngOnInit() {
     this.selectAll()
+    
   }
+
+ 
+
+
 
   selectAll() {
     this.selectionAll = true;
@@ -114,3 +129,7 @@ export class MyworkComponent implements OnInit {
     }
   }
 }
+function darkMode(darkMode: any): any {
+  throw new Error('Function not implemented.');
+}
+

@@ -1,16 +1,18 @@
 <div id="myWork" class="myWork">
-    <h2>{{'work.title' | translate }}</h2>
+    <h2 translate>work.title</h2>
     <div class="myWorkButtons">
-        <button (click)="selectAll();" [ngClass]="{'selectButton': selectionAll}">{{'work.all' | translate }}</button>
+        <button (click)="selectAll();" [ngClass]="{'selectButton': selectionAll}" translate>work.all</button>
         <button (click)="selectAngular();" [ngClass]="{'selectButton': selectionAngular}">Angular</button>
         <button (click)="selectJavascript();" [ngClass]="{'selectButton': selectionJavascript}">Java Script</button>
+
+        <span></span>
     </div>
     <div class="myWorkContainers">
             <div *ngFor="let mywork of mySelectWorks" class="myWorkContainer">
                 <div class="myWorkSelectContainer">
-                    <span class="SelectContainerTitle">{{mywork.title}}</span>
-                    <span>{{mywork.text}}</span>
-                    <a href={{mywork.link}} target="_blank"><button>{{'work.try' | translate }}</button></a>
+                    <span class="SelectContainerTitle" translate>{{mywork.title}}</span>
+                    <span translate>{{mywork.text}}</span>
+                    <a href={{mywork.link}} target="_blank"><button translate>work.try</button></a>
                 </div>
                 <img src="{{mywork.image}}">
             </div>

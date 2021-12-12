@@ -1,36 +1,35 @@
 {
+    "HELLO": "hallo {{value}}",
     "navbar": {
         "home": "STARTSEITE",
         "about": "ÜBER MICH",
         "language": "DE"
     },
-
     "head": {
-        "hi": "Hallo",
-        "im": "Ich bin",
-        "develop": "Entwickl",
+        "text": "Hallo,<br>Ich bin <font color=#2DFCD8>Manuel</font> Bärlocher<br>Front End Entwickl<font color=#FA2759>e</font>r",
         "contact": "Kontakt"
     },
-
     "skills": {
         "title": "Meine Fähigkeiten",
         "design": "Gestalterisches Denken",
         "test": "Test Automatisierung",
         "database": "Datenbanken"
     },
-
     "work": {
         "title": "Meine Projekte",
         "all": "Alle",
-        "try": "Ausprobieren"
+        "try": "Ausprobieren",
+        "elpollolocotitle": "EL Pollo Loco",
+        "elpollolocotext": "JavaScript -basiertes Jump-and-Run-Spiel.",
+        "mypagetitle": "Meine Seite",
+        "mypagetext": "Meine Seite erstellt mit Angular",
+        "eat.chtext": "Essen auf Bestellung und Lieferung"
     },
-
     "aboutme": {
         "title": "Über mich.",
         "text": "All",
         "fieldtitle1": "MEINE REISE BEGANN"
     },
-
     "contact": {
         "title": "Kontaktieren Sie mich.",
         "text": "Kontaktieren Sie mich über das untenstehende Formular oder per E-Mail an",
@@ -44,13 +43,8 @@
         "sendmail": "Vielen Dank für Ihre Nachricht, ich werde mich bei Ihnen melden.",
         "submit": "Senden"
     },
-
     "footer": {
         "imprint": "Impressum - Rechtlicher Hinweis",
         "data-protection": "Datenschutz"
     }
-    
-    
 }
-
-

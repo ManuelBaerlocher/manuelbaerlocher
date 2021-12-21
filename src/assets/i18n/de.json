@@ -6,7 +6,7 @@
         "language": "DE"
     },
     "head": {
-        "text": "Hallo,<br>Ich bin <font color=#2DFCD8>Manuel</font> Bärlocher<br>Front End Entwickl<font color=#FA2759>e</font>r",
+        "text": "Hallo,<br>Ich bin <font color=#2DFCD8>Manuel</font>Bärlocher<br>Front End Entwickl<font color=#FA2759>e</font>r",
         "contact": "Kontakt"
     },
     "skills": {
@@ -42,6 +42,19 @@
         "message": "Geben Sie Ihre Nachricht ein.",
         "sendmail": "Vielen Dank für Ihre Nachricht, ich werde mich bei Ihnen melden.",
         "submit": "Senden"
+    },
+    "imprint": {
+        "title": "Impressum",
+        "contact": "Kontakt-Adresse",
+        "country": "Schweiz",
+        "mail": "E-Mail",
+        "disclaimertitle": "Haftungsausschluss",
+        "disclaimertext": "<p>Der Autor übernimmt keinerlei Gewähr hinsichtlich der inhaltlichen Richtigkeit, Genauigkeit, Aktualität,Zuverlässigkeit und Vollständigkeit der Informationen.</p><p>Haftungsansprüche gegen den Autor wegen Schäden materieller oder immaterieller Art, welche aus dem Zugriff oder der Nutzung bzw. Nichtnutzung der veröffentlichten Informationen, durch Missbrauch der Verbindung oder durchtechnische Störungen entstanden sind, werden ausgeschlossen.</p><p>Alle Angebote sind unverbindlich. Der Autor behält es sich ausdrücklich vor, Teile der Seiten oder das gesamteAngebot ohne besondere Ankündigung zu verändern, zu ergänzen, zu löschen oder die Veröffentlichung zeitweise oder endgültig einzustellen.</p><br /><br />",
+        "linktitle": "Haftungsausschluss für Links",
+        "linktext": "Verweise und Links auf Webseiten Dritter liegen ausserhalb unseres Verantwortungsbereichs. Es wird jegliche Verantwortung für solche Webseiten abgelehnt. Der Zugriff und die Nutzung solcher Webseiten erfolgen auf eigene Gefahr des jeweiligen Nutzers.",
+        "copyrighttitle": "Urheberrechte",
+        "copyrighttext": "Die Urheber- und alle anderen Rechte an Inhalten, Bildern, Fotos oder anderen Dateien auf dieser Website, gehören ausschliesslich <strong>Manuel Bärlocher</strong> oder den speziell genannten Rechteinhabern. Für die Reproduktion jeglicher Elemente ist die schriftliche Zustimmung des Urheberrechtsträgers im Voraus einzuholen.",
+        "source": "Quelle"
     },
     "footer": {
         "imprint": "Impressum - Rechtlicher Hinweis",

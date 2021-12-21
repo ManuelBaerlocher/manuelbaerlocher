@@ -4,7 +4,6 @@
         "ADMIN": "Administrator"
     },
     "HELLO1": "Welcome to my Angular application!<br><strong>This is an amazing app which uses the latest technologies!</strong>",
-
     "navbar": {
         "home": "HOME",
         "about": "ABOUT",
@@ -13,7 +12,6 @@
     "head": {
         "text": "Hi,<br>I'm <font color=#2DFCD8>Manuel</font> Bärlocher<br>Front End develop<font color=#FA2759>e</font>r",
         "contact": "Contact me"
-
     },
     "skills": {
         "title": "My Skills",
@@ -29,7 +27,7 @@
         "elpollolocotext": "JavaScript -based jump and run game.",
         "mypagetitle": "My Page",
         "mypagetext": "My Page build with Angular",
-        "eat.chtext":"Side to order and deliverey food"
+        "eat.chtext": "Side to order and deliverey food"
     },
     "aboutme": {
         "title": "About me.",
@@ -48,6 +46,19 @@
         "message": "Enter your message.",
         "sendmail": "Thank you for your message, I will get back to you.",
         "submit": "Submit"
+    },
+    "imprint": {
+        "title": "Imprint",
+        "contact": "Contact address",
+        "country": "Switzerland",
+        "mail": "Mail",
+        "disclaimertitle": "Disclaimer",
+        "disclaimertext": "<p>The author accepts no responsibility for the correctness, accuracy, up-to-dateness, reliability and completeness of the information.</p><p>The author accepts no liability for material or immaterial damage resulting from access to or use or non-use of the published information, or from misuse of the connection or technical faults.</p><p>All offers are non-binding. The author expressly reserves the right to change, supplement or delete parts of the pages or the entire offer without special notice or to discontinue publication temporarily or permanently.</p><br /><br />",
+        "linktitle": "Disclaimer for links",
+        "linktext": "References and links to third-party websites are outside our area of responsibility. Any responsibility for such websites is declined. Access to and use of such websites is at the risk of the respective user.",
+        "copyrighttitle": "Copyright",
+        "copyrighttext": "The copyright and all other rights to the content, images, photos or other files on this website belong exclusively to <strong>Manuel Bärlocher</strong> or the specifically named copyright holders. The written consent of the copyright holder must be obtained in advance for the reproduction of any elements.",
+        "source": "Source"
     },
     "footer": {
         "imprint": "Imprint - Legal Notice",
